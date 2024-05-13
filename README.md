@@ -1,6 +1,6 @@
 ## Getting Started
 
-Make sure you are using Node.js version 18.17.0. Use nvm to switch with command:
+Make sure you are using Node.js version 18.17.0 or above. Use nvm to switch with these commands:
 
 ```
 nvm install 18.17.0
@@ -14,7 +14,7 @@ npm i
 npm run dev
 ```
 
-Then run the server code. Look at the shadeform-backend README.
+Then run the server code from this repo: https://github.com/sagarsaija/shadeform-backend. Look at the shadeform-backend README.
 
 The client should be running on http://localhost:3000 and the server http://localhost:3001.
 

@@ -21,11 +21,13 @@ export default function RootLayout({
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
+    if (typeof window !== "undefined") {
+      setIsClient(true);
+    }
   }, []);
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       {isClient ? (
         <>
           <head />
