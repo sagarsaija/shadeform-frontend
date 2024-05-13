@@ -33,7 +33,7 @@ export default function Page() {
     };
 
     fetchGpuInstances();
-  }, [gpuInstances]);
+  }, []);
 
   if (gpuInstances.length === 0) {
     return (
