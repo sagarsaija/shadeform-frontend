@@ -15,9 +15,9 @@ const Page = () => {
     const fetchInstances = async () => {
       const response = await viewInstances();
       setInstances(response);
+      setLoading(false);
     };
     fetchInstances();
-    setLoading(false);
   }, []);
   const handleDelete = async (id: number) => {
     await deleteInstance(id);
